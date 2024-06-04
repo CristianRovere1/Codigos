@@ -1,0 +1,8 @@
+soma=0
+contador=0
+
+while contador <10:
+    numero=int(input("digite um numero"))
+    soma += numero 
+    contador +=1
+print("a soma dos numeros resulta em:",soma)

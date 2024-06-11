@@ -1,9 +1,27 @@
-v = float(input('/ninsira o valor sem desconto do produto:'))
+lista1 = ['Maçã', 'Garfo', 'Banana', 'Faca', 'Laranja']
+lista2 = ['Colher', 'Pera', 'Garfo', 'Kiwi', 'Faca']
+frutas = []
+talheres = []
 
-p = float(input('insira a porcentagem de desconto:'))
+for item in lista1 + lista2:
+    if item in ['Maçã', 'Banana', 'Laranja', 'Pera', 'Kiwi']:
+        frutas.append(item)
+    else:
+        talheres.append(item)
 
-vd = v * p/100
+for fruta in frutas:
+    if fruta in lista1:
+        lista1.remove(fruta)
+    if fruta in lista2:
+        lista2.remove(fruta)
 
-vf = v - vd
-print('o valor descontado é de:" R$ {:,.2f}'. format (vd))
-print('the valor a pagar é de:" R$ {:,.2f}'. format (vf))
+for talher in talheres:
+    if talher in lista1:
+        lista1.remove(talher)
+    if talher in lista2:
+        lista2.remove(talher)
+
+
+print("Frutas:", frutas)
+print("Talheres:", talheres)
+

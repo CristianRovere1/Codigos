@@ -1,11 +1,18 @@
-idade_pessoa=int(input("digite sua idade: "))
-if idade_pessoa<=10:
-    print("você é uma criança")
-elif idade_pessoa>= 11 and idade_pessoa <= 14:
-    print("você é um pré adolescente")
-elif idade_pessoa >= 15 and idade_pessoa <= 18:
-    print ("você é um adolescente")
-elif idade_pessoa>= 19 and idade_pessoa <= 40:
-    print("você é um jovem adulto")
-else:
-    print("você é um idoso")
+fruta1 = ['Maçã', 'Garfo', 'Banana', 'concha', 'Laranja']
+talher1 = ['Colher', 'Pera', 'espatula', 'Kiwi', 'Faca']
+
+#essa e a fruta n confunde
+frutas2=fruta1.pop(1)
+talher1.append(frutas2)
+#essa e a fruta n confunde
+frutas2=fruta1.pop(2)
+talher1.append(frutas2)
+#talher abaixo n confunde
+talher2=talher1.pop(1)
+fruta1.append(talher2)
+#talher abaixo n confunde
+talher2=talher1.pop(2)
+fruta1.append(talher2)
+
+print (fruta1)
+print(talher1)

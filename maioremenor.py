@@ -1,0 +1,6 @@
+numeros = input("Insira os números da lista separados por espaço: ").split()
+numeros = list(map(int, numeros))
+maior_numero = max(numeros)
+menor_numero = min(numeros)
+print("Maior número:", maior_numero)
+print("Menor número:", menor_numero)

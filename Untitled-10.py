@@ -14,17 +14,3 @@ else:
 
 print("\nO resultado é: ")
 
-if (resultado // 1) % 2 == 0:
-    print("Par")
-else:
-    print("Ímpar")
-
-if resultado >= 0:
-    print("Positivo")
-else:
-    print("Negativo")
-
-if resultado % 1 == 0:
-    print("Inteiro")
-else:
-    print("Decimal")
